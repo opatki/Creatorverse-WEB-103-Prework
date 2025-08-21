@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![http://i.imgur.com/link/to/your/gif/file.gif](https://imgur.com/a/N16s7sX)
+![Gif of the app](Creatorverse.gif)
 
 ## Notes
 
