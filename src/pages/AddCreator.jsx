@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { supabase } from '../client'
 import { useNavigate } from 'react-router-dom'
 
-export default function AddCreator({ value }) {
+export default function AddCreator() {
     const navigate = useNavigate()
     const [youtube, setYoutube] = useState("")
     const [twitter, setTwitter] = useState("")
     const [instagram, setInstagram] = useState("")
     const [error, setError] = useState("")
+    const formRef = useRef(null);
+
+    useEffect(() => {
+        formRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [])
 
     async function newCreator(formData) {
         if (!youtube && !twitter && !instagram) {
@@ -33,7 +38,7 @@ export default function AddCreator({ value }) {
     }
 
     return (
-        <form action={newCreator}>
+        <form action={newCreator} ref={formRef}>
             <label htmlFor="name">Name</label>
             <input id="name" type="text" name="name" required />
             <br />
