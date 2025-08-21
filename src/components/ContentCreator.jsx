@@ -18,13 +18,13 @@ export default function ContentCreator({ name, description, imageUrl, id, youtub
                 </div>
             </div>
             <div className="socials bright">
-                <a href={`https://www.youtube.com/@${youtube}`}>
+                <a href={`https://www.youtube.com/@${youtube}`} target="_blank">
                     <i className="fa-brands fa-youtube"></i>
                 </a>
-                <a href={`https://x.com/${twitter}`}>
+                <a href={`https://x.com/${twitter}`} target="_blank">
                     <i className="fa-brands fa-twitter"></i>
                 </a>
-                <a href={`https://www.instagram.com/${instagram}`}>
+                <a href={`https://www.instagram.com/${instagram}`} target="_blank">
                     <i className="fa-brands fa-instagram"></i>
                 </a>
             </div>

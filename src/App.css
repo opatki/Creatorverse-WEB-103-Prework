@@ -131,13 +131,14 @@ form button:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 
 .content-creator {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2em;
+  margin: 1em;
   text-decoration: none;
   color: white;
   width: 350px;
