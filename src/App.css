@@ -1,0 +1,342 @@
+
+/* Header Styles */
+header {
+  margin-top: -25px;
+  background-image: url("../assets/Earth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 35em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #6C90CC solid 2px;
+  font-family: Arial;
+}
+
+header h1 {
+  color: white;
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em;
+  margin-bottom: 1em;
+}
+
+.head-buttons .button {
+  background-color: #6C90CC;
+  color: white;
+  padding: 1em 2.5em;
+  font-size: 1.25em;
+  border-radius: 5%;
+  border: none;
+  margin: 0 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  border: #6C90CC solid 1px;
+  text-decoration: none;
+}
+
+.head-buttons .button:hover {
+  border: white solid 1px;
+  background-color: #415892;
+}
+
+/* Form Styles */
+form {
+  margin-top: 2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  max-width: 600px;
+  margin: 4em auto 2em auto;
+}
+
+form label {
+  font-size: 1.75em;
+  margin: 0;
+}
+
+form p {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-style: italic;
+}
+
+form input, form textarea {
+  width: 100%;
+  height: 3em;
+  padding: 0 2em 0 1em;
+  font-size: 1em;
+  border-radius: 5%;
+  font-family: Arial;
+}
+
+form h2 {
+  color: #415892;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 1em 0 .5em 0;
+}
+
+#description {
+  height: 7em;
+  padding: 1em 2em 1em 1em;
+  max-width: 50em;
+  font-size: 1em;
+  resize: none;
+  border-radius: 4%;
+}
+
+.social {
+  margin-top: 1.5em;
+}
+
+.social i {
+  font-size: 1.75em;
+  margin-right: 0.5em;
+}
+
+#normal {
+  font-style: normal;
+}
+
+form button {
+  background-color: #6C90CC;
+  color: white;
+  margin: 0;
+  width: 108%;
+  height: 3.5em;
+  font-size: 1.25em;
+  border-radius: 5%;
+  font-weight: 700;
+  cursor: pointer;
+  border: #6C90CC solid 1px;
+  margin-top: 1em;
+}
+
+form button:hover {
+  border: white solid 1px;
+  background-color: #415892;
+}
+
+/* Content Creator Card Styles */
+.all-creators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  text-decoration: none;
+  color: white;
+  width: 350px;
+  height: 200px;
+  padding: 3em 2.5em 2em 2.5em;
+  background-size: cover; 
+  background-position: center;
+  border: #66a3ff solid 2px;
+  border-radius: 3%;
+  font-family: Arial, sans-serif;
+}
+
+.content-creator i {
+  color: white;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.main-info h2 {
+  color: #66a3ff;
+  text-shadow: 1.5px 1.5px 0.5px rgba(0, 0, 0, 1);
+  font-weight: bold;
+  margin: 0;
+}
+
+.main-info div i {
+  font-size: 1.2em;
+  margin-right: 0.6em;
+} 
+
+.socials i {
+  font-size: 1.8em;
+  margin-right: 0.25em;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+
+/* Creator page styles */
+.creator-page {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5em;
+  max-width: 65%;
+  margin: 5em auto 0 auto;
+}
+
+.creator-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.creator-content img {
+  margin-right: 4em; 
+  width: 22em;
+  border: #415892 solid 2px;
+  border-radius: 5%;
+}
+
+.creator-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-info h1 {
+  font-size: 3em;
+  color: #415892;
+  text-shadow: 1.5px 1.5px 0.5px rgba(0, 0, 0, 1);
+  font-weight: bold;
+  margin: 0 0 0.25em 0;
+}
+
+.creator-info .desc {
+  font-size: 1em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 2em;
+}
+
+.icon-container p, .icon-container i {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.bottom-btns {
+  margin: 4em 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 1em 2em;
+  width: 250px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.edit {
+  background-color: #5185B4;
+  border: #5185B4 solid 1px;
+}
+
+.edit:hover {
+  background-color: #28425A;
+  border: white solid 1px;
+}
+
+.delete {
+  background-color: #FF605C;
+  border: #FF605C solid 1px;
+}
+
+.delete:hover {
+  background-color: #80302E;
+  border: white solid 1px;
+}
+
+#edit-page button {
+  width: 17.9em;
+  padding: 1em 2em;
+  text-align: center;
+  
+}
+
+#edit-page {
+  margin: 2em auto 2em auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: rgba(17, 17, 17, 0.85);
+  padding: 5rem 4rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 90%;
+  border: #5185B4 solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  color: #5185B4;
+  margin-bottom: 1rem;
+  font-size: 2em;
+}
+
+.modal p {
+  font-style: normal;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.cancel, .confirm  {
+  background-color: #5185B4;
+  font-size: 0.8em;
+  width: 15em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
