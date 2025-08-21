@@ -1,14 +1,15 @@
-import React from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { supabase } from '../client'
 import { useParams, useNavigate } from 'react-router-dom'
 
 export default function EditCreator() {
     const { id } = useParams()   // get id from URL (e.g. /creator/edit/123)
     const navigate = useNavigate()
-    const [creator, setCreator] = React.useState(null)
-    const [showModal, setShowModal] = React.useState(false)
+    const [creator, setCreator] = useState(null)
+    const [showModal, setShowModal] = useState(false)
+    const formRef = useRef(null)
 
-    React.useEffect(() => {
+    useEffect(() => {
         async function fetchCreator() {
             const { data } = await supabase
                 .from('creators')
@@ -18,6 +19,7 @@ export default function EditCreator() {
             setCreator(data)
         }
         fetchCreator()
+        formRef.current?.scrollIntoView({ behavior: "smooth" })
     }, [id])
 
     async function updateCreator(formData) {
@@ -47,7 +49,7 @@ export default function EditCreator() {
     if (!creator) return <p>Loading...</p>
 
     return (
-        <form action={updateCreator}>
+        <form action={updateCreator} ref={formRef}>
             <label htmlFor="name">Name</label>
             <input id="name" type="text" name="name" defaultValue={creator.name}/>
             <br />

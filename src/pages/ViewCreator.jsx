@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { supabase } from '../client'
 
@@ -6,12 +6,13 @@ import { supabase } from '../client'
 
 export default function ViewCreator() {
     const { id } = useParams()   
-    const [creator, setCreator] = React.useState(null)
-    const [loading, setLoading] = React.useState(true)
-    const [showModal, setShowModal] = React.useState(false)
+    const [creator, setCreator] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [showModal, setShowModal] = useState(false)
     const navigate = useNavigate()
+    const creatorRef = useRef(null)
 
-    React.useEffect(() => {
+    useEffect(() => {
         async function fetchCreator() {
             let { data, error } = await supabase
             .from('creators')
@@ -26,6 +27,7 @@ export default function ViewCreator() {
         }
 
         fetchCreator()
+        creatorRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [id])
 
     function updateCreator() {
@@ -44,7 +46,7 @@ export default function ViewCreator() {
     if (!creator) return <p>Creator not found</p>
 
     return (
-        <section className="creator-page">
+        <section className="creator-page" ref={creatorRef}>
             <div className="creator-content">
                 <img src={creator.imageUrl || '../../assets/Empty.png'} />
                 <div className="creator-info">

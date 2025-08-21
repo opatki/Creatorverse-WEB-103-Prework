@@ -1,12 +1,14 @@
-import React from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { supabase } from "../client"
 import ContentCreator from '../components/ContentCreator'
 
 export default function ShowCreators() {
-    const [creators, setCreators] = React.useState([])
+    const [creators, setCreators] = useState([])
+    const creatorsRef = useRef(null)
 
-    React.useEffect(() => {
+    useEffect(() => {
         fetchCreators()
+        creatorsRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [])
 
     async function fetchCreators() {
@@ -36,7 +38,7 @@ export default function ShowCreators() {
     ))
 
     return (
-        <section className="all-creators">
+        <section className="all-creators" ref={creatorsRef}>
             {renderCreators}
         </section>
     )
