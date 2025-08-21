@@ -4,7 +4,7 @@ Submitted by: **Om Patki**
 
 About this web app: **A React and Supabase app that showcases my favorite creators**
 
-Time spent: **10** hours
+Time spent: **12** hours
 
 ## Required Features
 
@@ -29,21 +29,21 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] Used refs for scroll and DOM manipulation
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-[http://i.imgur.com/link/to/your/gif/file.gif](https://imgur.com/a/N16s7sX)
+![http://i.imgur.com/link/to/your/gif/file.gif](https://imgur.com/a/N16s7sX)
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+The logic for requiring at least one of the social media links was embarrassingly difficult for me to implement.
 
 ## License
 
-Copyright [👉🏿 yyyy] [👉🏿 name of copyright owner]
+Copyright [2025] [Om Patki]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
