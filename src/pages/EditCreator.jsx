@@ -103,7 +103,7 @@ export default function EditCreator() {
                             <button className="btn cancel" onClick={() => setShowModal(false)}>
                                 NAH, NEVER MIND
                             </button>
-                            <button className="btn confirm" onClick={deleteCreator}>
+                            <button className="btn confirm" type="button" onClick={deleteCreator}>
                                 YES! TOTALLY SURE
                             </button>
                         </div>

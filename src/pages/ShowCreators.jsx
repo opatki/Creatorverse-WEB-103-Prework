@@ -29,7 +29,7 @@ export default function ShowCreators() {
         key={creator.id}
         id={creator.id}
         name={creator.name} 
-        imageUrl={creator.imageUrl}
+        imageUrl={creator.imageUrl ? creator.imageUrl : '../../assets/Empty.png'}
         description={creator.description} 
         youtube={creator.youtube} 
         twitter={creator.twitter} 
